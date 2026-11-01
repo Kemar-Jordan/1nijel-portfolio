@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en" class="motion-safe:scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.tailwindcss.com 'sha256-kwNZ6NDykVTCm95QmU+MPTG8U4DIpmmN6H94rYsfDPE=' 'sha256-km5oVjJdoXDl0HVKjYUEnUIuHXo6mpWZG+VCNqc1lUM='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://i.ytimg.com; frame-src https://www.youtube-nocookie.com https://www.instagram.com; connect-src 'self'; media-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0D0D0D">
+
+  <title>1nijel — Carnival Edition</title>
+  <meta name="description" content="1nijel: street culture host, skit creator and storyteller covering football matchday culture, Caribbean heritage, diaspora vibes and travel. Engineer half the day, enjoyment minister the rest.">
+  <meta name="author" content="1nijel">
+  <link rel="canonical" href="https://1nijel.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="1nijel — 1nijel, never two">
+  <meta property="og:description" content="Street interviews, fan reactions, skits, Caribbean and diaspora culture. Brand and creator collabs welcome.">
+  <meta property="og:url" content="https://1nijel.com/">
+  <meta property="og:image" content="https://1nijel.com/images/hero-host.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="1nijel — 1nijel, never two">
+  <meta name="twitter:description" content="Street interviews, fan reactions, skits, Caribbean and diaspora culture.">
+  <meta name="twitter:image" content="https://1nijel.com/images/hero-host.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap">
+  <link rel="preload" as="image" href="images/hero-host.jpg" fetchpriority="high">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#0D0D0D',
+            panel: '#151515',
+            line: '#262626',
+            bone: '#F4F1EA',
+            mute: '#9A9A9A',
+            mas: '#FF2E88',
+            sun: '#FF8A00',
+            feather: '#FFD400',
+            lagoon: '#00D1B2',
+            jouvert: '#7B2CFF'
+          },
+          fontFamily: {
+            display: ['Anton', 'Impact', 'sans-serif'],
+            sans: ['Inter', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace']
+          },
+          keyframes: {
+            marquee: { '0%': { transform: 'translateX(0)' }, '100%': { transform: 'translateX(-50%)' } }
+          },
+          animation: {
+            marquee: 'marquee 28s linear infinite'
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    :root { color-scheme: dark; }
+    body { background: #0D0D0D; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    ::selection { background: #FF2E88; color: #0D0D0D; }
+    .grain { background-image: radial-gradient(rgba(255,255,255,0.035) 1px, transparent 1px); background-size: 3px 3px; }
+    .text-outline { color: transparent; -webkit-text-stroke: 1.5px #F4F1EA; }
+    .cat-card[hidden] { display: none; }
+    @media (prefers-reduced-motion: reduce) {
+      .animate-marquee { animation: none; }
+      * { transition-duration: 0.01ms !important; }
+    }
+  </style>
+</head>
+
+<body class="bg-ink text-bone font-sans antialiased selection:bg-mas selection:text-ink">
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-mas focus:px-4 focus:py-2 focus:font-bold focus:text-ink">Skip to content</a>
+
+  <!-- ============ HEADER / NAV ============ -->
+  <header id="site-header" class="fixed inset-x-0 top-0 z-50 border-b border-transparent transition-colors duration-300">
+    <div class="flex h-1.5" aria-hidden="true"><span class="flex-1 bg-mas"></span><span class="flex-1 bg-sun"></span><span class="flex-1 bg-feather"></span><span class="flex-1 bg-lagoon"></span><span class="flex-1 bg-jouvert"></span></div>
+    <div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <a href="#top" class="group flex flex-col leading-none" aria-label="1nijel home">
+        <span class="font-display text-2xl tracking-wide text-bone">1NIJEL<span class="text-mas">.</span></span>
+        <span class="mt-0.5 font-mono text-[10px] uppercase tracking-[0.22em] text-mute group-hover:text-mas">1nijel, never two</span>
+      </a>
+
+      <nav aria-label="Primary" class="hidden md:block">
+        <ul class="flex items-center gap-8 text-sm font-semibold uppercase tracking-widest">
+          <li><a href="#about" class="nav-link text-mute transition-colors hover:text-bone focus-visible:text-bone">About</a></li>
+          <li><a href="#categories" class="nav-link text-mute transition-colors hover:text-bone focus-visible:text-bone">Categories</a></li>
+          <li><a href="#collab" class="nav-link text-mute transition-colors hover:text-bone focus-visible:text-bone">Collab</a></li>
+          <li>
+            <a href="mailto:1nijelcollab@gmail.com?subject=Collab%20with%201nijel" class="rounded-full bg-mas px-5 py-2.5 text-ink transition hover:bg-bone focus:outline-none focus-visible:ring-2 focus-visible:ring-mas focus-visible:ring-offset-2 focus-visible:ring-offset-ink">Book Me</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button id="menu-toggle" type="button" class="relative inline-flex h-11 w-11 items-center justify-center rounded-full border border-line md:hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-mas" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu">
+        <span class="sr-only" id="menu-toggle-label">Open menu</span>
+        <span aria-hidden="true" class="absolute block h-0.5 w-5 -translate-y-1.5 bg-bone transition-transform duration-300" data-bar="top"></span>
+        <span aria-hidden="true" class="absolute block h-0.5 w-5 bg-bone transition-opacity duration-300" data-bar="mid"></span>
+        <span aria-hidden="true" class="absolute block h-0.5 w-5 translate-y-1.5 bg-bone transition-transform duration-300" data-bar="bot"></span>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden border-t border-line bg-ink/95 backdrop-blur-md md:hidden">
+      <nav aria-label="Mobile">
+        <ul class="flex flex-col px-4 py-6 font-display text-4xl uppercase tracking-wide">
+          <li><a href="#about" class="mobile-link block py-2 hover:text-mas">About</a></li>
+          <li><a href="#categories" class="mobile-link block py-2 hover:text-mas">Categories</a></li>
+          <li><a href="#collab" class="mobile-link block py-2 hover:text-mas">Collab</a></li>
+          <li class="pt-4">
+            <a href="mailto:1nijelcollab@gmail.com?subject=Collab%20with%201nijel" class="mobile-link inline-flex rounded-full bg-mas px-6 py-3 font-sans text-base font-bold tracking-widest text-ink">Book Me →</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section id="top" class="relative overflow-hidden pt-16" aria-labelledby="hero-title">
+      <div class="grain pointer-events-none absolute inset-0" aria-hidden="true"></div>
+      <div class="pointer-events-none absolute -right-32 top-0 h-[30rem] w-[30rem] rounded-full bg-mas/30 blur-3xl" aria-hidden="true"></div>
+      <div class="pointer-events-none absolute right-40 top-72 h-72 w-72 rounded-full bg-sun/25 blur-3xl" aria-hidden="true"></div>
+      <div class="pointer-events-none absolute -left-24 bottom-10 h-80 w-80 rounded-full bg-jouvert/30 blur-3xl" aria-hidden="true"></div>
+      <div class="pointer-events-none absolute left-1/3 top-24 h-40 w-40 rounded-full bg-lagoon/15 blur-3xl" aria-hidden="true"></div>
+
+      <div class="relative mx-auto grid max-w-7xl gap-10 px-4 pb-16 pt-10 sm:px-6 md:pt-16 lg:grid-cols-12 lg:gap-12 lg:px-8 lg:pb-24">
+        <div class="flex flex-col justify-center lg:col-span-7">
+          <p class="mb-6 inline-flex w-fit items-center gap-2 rounded-full border border-line px-3 py-1.5 font-mono text-[11px] uppercase tracking-[0.2em] text-mute">
+            <span class="relative flex h-2 w-2" aria-hidden="true">
+              <span class="absolute inline-flex h-full w-full rounded-full bg-lagoon opacity-75 motion-safe:animate-ping"></span>
+              <span class="relative inline-flex h-2 w-2 rounded-full bg-lagoon"></span>
+            </span>
+            Host · Creator · @1nijel
+          </p>
+
+          <h1 id="hero-title" class="font-display text-[clamp(3.5rem,13vw,9.5rem)] uppercase leading-[0.88] tracking-tight">
+            <span class="block">1nijel<span class="text-feather">,</span></span>
+            <span class="block text-outline [-webkit-text-stroke-color:#00D1B2]">never</span>
+            <span class="inline-block -rotate-2 bg-gradient-to-r from-mas via-sun to-feather bg-clip-text pr-2 text-transparent">two.</span>
+          </h1>
+
+          <p id="about" class="mt-8 max-w-xl scroll-mt-24 text-lg leading-relaxed text-mute sm:text-xl">
+            <strong class="font-extrabold text-bone">Engineer half the day, enjoyment minister the rest.</strong>
+            I capture <strong class="font-bold text-bone">authentic human reactions</strong>, host <strong class="font-bold text-bone">street culture interviews</strong>, create <strong class="font-bold text-bone">skits</strong>, and explore <strong class="font-bold text-mas">sports, Caribbean heritage, and diaspora culture</strong>.
+          </p>
+
+          <div class="mt-10 flex flex-col gap-3 sm:flex-row">
+            <a href="#categories" class="group inline-flex items-center justify-center gap-2 rounded-full bg-mas px-7 py-4 text-sm font-extrabold uppercase tracking-widest text-ink transition hover:bg-bone focus:outline-none focus-visible:ring-2 focus-visible:ring-mas focus-visible:ring-offset-2 focus-visible:ring-offset-ink">
+              Explore Categories
+              <svg class="h-4 w-4 transition-transform group-hover:translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+            </a>
+            <a href="#collab" class="group inline-flex items-center justify-center gap-2 rounded-full border border-bone/30 px-7 py-4 text-sm font-extrabold uppercase tracking-widest text-bone transition hover:border-mas hover:text-mas focus:outline-none focus-visible:ring-2 focus-visible:ring-mas focus-visible:ring-offset-2 focus-visible:ring-offset-ink">
+              Let's Collab
+              <svg class="h-4 w-4 transition-transform group-hover:translate-x-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <dl class="mt-12 grid max-w-lg grid-cols-3 gap-4 border-t border-line pt-6">
+            <div>
+              <dt class="font-mono text-[10px] uppercase tracking-[0.2em] text-mute">Format</dt>
+              <dd class="mt-1 font-display text-2xl uppercase text-mas">Reels</dd>
+            </div>
+            <div>
+              <dt class="font-mono text-[10px] uppercase tracking-[0.2em] text-mute">Beat</dt>
+              <dd class="mt-1 font-display text-2xl uppercase text-sun">Street</dd>
+            </div>
+            <div>
+              <dt class="font-mono text-[10px] uppercase tracking-[0.2em] text-mute">Roots</dt>
+              <dd class="mt-1 font-display text-2xl uppercase text-lagoon">Caribbean</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="lg:col-span-5">
+          <figure class="relative mx-auto w-full max-w-md lg:max-w-none">
+            <div class="absolute -inset-3 -rotate-3 rounded-[2rem] bg-gradient-to-br from-mas via-sun to-jouvert" aria-hidden="true"></div>
+            <span class="absolute -right-3 -top-5 z-10 rotate-12 rounded-full bg-feather px-4 py-2 font-display text-lg uppercase text-ink shadow-[4px_4px_0_#0D0D0D] motion-safe:animate-bounce" aria-hidden="true">Mas ready!</span>
+            <div class="relative aspect-[4/5] overflow-hidden rounded-[1.75rem] border border-line bg-panel">
+              <img
+                src="images/hero-host.jpg"
+                alt="1nijel holding a microphone, ready for a street interview"
+                class="photo h-full w-full object-cover object-top grayscale-[15%] contrast-110"
+                width="800" height="1000"
+                fetchpriority="high"
+                decoding="async"
+                data-fallback="hero-fallback">
+              <div id="hero-fallback" class="absolute inset-0 hidden flex-col items-center justify-center bg-panel" aria-hidden="true">
+                <span class="font-display text-[9rem] leading-none text-mas">1N</span>
+                <span class="mt-2 font-mono text-xs uppercase tracking-[0.3em] text-mute">images/hero-host.jpg</span>
+              </div>
+              <div class="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-ink via-ink/40 to-transparent" aria-hidden="true"></div>
+              <figcaption class="absolute inset-x-0 bottom-0 flex items-end justify-between p-5">
+                <span>
+                  <span class="block font-mono text-[10px] uppercase tracking-[0.25em] text-mas">On the mic</span>
+                  <span class="block font-display text-3xl uppercase leading-none">@1nijel</span>
+                </span>
+                <span class="rounded-full bg-mas px-3 py-1 font-mono text-[10px] font-bold uppercase tracking-widest text-ink">Live on IG</span>
+              </figcaption>
+            </div>
+          </figure>
+        </div>
+      </div>
+
+      <!-- Marquee -->
+      <div class="relative -rotate-1 scale-x-105 border-y-2 border-ink bg-gradient-to-r from-mas via-sun to-jouvert py-3 text-ink" aria-hidden="true">
+        <div class="flex w-max animate-marquee whitespace-nowrap font-display text-2xl uppercase tracking-wide">
+          <span class="flex items-center gap-8 pr-8">
+            <span>Matchday Culture</span><span class="text-feather">✺</span><span>Street Interviews</span><span class="text-feather">✺</span><span>Fan Reactions</span><span class="text-feather">✺</span><span>Carnival</span><span class="text-feather">✺</span><span>Diaspora Vibes</span><span class="text-feather">✺</span><span>Skits &amp; POVs</span><span class="text-feather">✺</span><span>Barbados</span><span class="text-feather">✺</span>
+          </span>
+          <span class="flex items-center gap-8 pr-8">
+            <span>Matchday Culture</span><span class="text-feather">✺</span><span>Street Interviews</span><span class="text-feather">✺</span><span>Fan Reactions</span><span class="text-feather">✺</span><span>Carnival</span><span class="text-feather">✺</span><span>Diaspora Vibes</span><span class="text-feather">✺</span><span>Skits &amp; POVs</span><span class="text-feather">✺</span><span>Barbados</span><span class="text-feather">✺</span>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CATEGORIES ============ -->
+    <section id="categories" class="scroll-mt-16 py-20 sm:py-28" aria-labelledby="categories-title">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+          <div>
+            <p class="font-mono text-xs uppercase tracking-[0.25em] text-sun">01 — The Content</p>
+            <h2 id="categories-title" class="mt-3 font-display text-5xl uppercase leading-none sm:text-7xl">Pick a <span class="inline-block rotate-2 text-mas">lane.</span></h2>
+            <p class="mt-4 max-w-md text-mute">Four channels of culture. Tap a card to watch the latest drops on Instagram or YouTube.</p>
+          </div>
+
+          <div class="-mx-4 overflow-x-auto px-4 pb-1 md:mx-0 md:px-0">
+            <div class="flex w-max gap-2" role="group" aria-label="Filter content categories">
+              <button type="button" class="filter-btn rounded-full border px-4 py-2 text-xs font-bold uppercase tracking-widest transition focus:outline-none focus-visible:ring-2 focus-visible:ring-mas" data-filter="all" aria-pressed="true">All</button>
+              <button type="button" class="filter-btn rounded-full border px-4 py-2 text-xs font-bold uppercase tracking-widest transition focus:outline-none focus-visible:ring-2 focus-visible:ring-mas" data-filter="football" aria-pressed="false">Football</button>
+              <button type="button" class="filter-btn rounded-full border px-4 py-2 text-xs font-bold uppercase tracking-widest transition focus:outline-none focus-visible:ring-2 focus-visible:ring-mas" data-filter="diaspora" aria-pressed="false">Caribbean</button>
+              <button type="button" class="filter-btn rounded-full border px-4 py-2 text-xs font-bold uppercase tracking-widest transition focus:outline-none focus-visible:ring-2 focus-visible:ring-mas" data-filter="skits" aria-pressed="false">Skits</button>
+              <button type="button" class="filter-btn rounded-full border px-4 py-2 text-xs font-bold uppercase tracking-widest transition focus:outline-none focus-visible:ring-2 focus-visible:ring-mas" data-filter="travel" aria-pressed="false">Travel</button>
+            </div>
+          </div>
+        </div>
+        <p id="filter-status" class="sr-only" aria-live="polite"></p>
+
+        <ul id="category-grid" class="mt-12 grid gap-5 sm:grid-cols-2" role="list">
+          <!-- Football -->
+          <li class="cat-card group relative flex flex-col overflow-hidden rounded-3xl border border-line bg-panel p-6 transition duration-300 hover:-translate-y-1 hover:-rotate-1 hover:border-sun sm:p-8" data-category="football">
+            <div class="flex items-start justify-between">
+              <span class="font-display text-7xl leading-none text-line transition-colors group-hover:text-sun" aria-hidden="true">01</span>
+              <span class="rounded-full border border-line px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-mute">Sports</span>
+            </div>
+            <h3 class="mt-8 font-display text-4xl uppercase leading-none">Football &amp; Matchday Culture</h3>
+            <p class="mt-3 text-mute">The terrace energy before kick-off and the hot takes after full-time.</p>
+            <ul class="mt-6 flex flex-wrap gap-2" aria-label="Formats">
+              <li class="rounded-md bg-sun/15 px-2.5 py-1 text-xs font-semibold text-sun">Street interviews</li>
+              <li class="rounded-md bg-sun/15 px-2.5 py-1 text-xs font-semibold text-sun">Fan reactions</li>
+              <li class="rounded-md bg-sun/15 px-2.5 py-1 text-xs font-semibold text-sun">Pub debates</li>
+            </ul>
+            <div class="mt-8 flex flex-wrap gap-3 border-t border-line pt-6">
+              <a href="https://www.instagram.com/1nijel/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full bg-sun px-4 py-2 text-xs font-extrabold uppercase tracking-widest text-ink transition hover:bg-bone focus:outline-none focus-visible:ring-2 focus-visible:ring-mas focus-visible:ring-offset-2 focus-visible:ring-offset-panel">
+                Instagram <span aria-hidden="true">↗</span><span class="sr-only">(opens in a new tab) — Football and matchday culture</span>
+              </a>
+              <a href="https://www.youtube.com/@1nijel-u5c/search?query=football" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full border border-bone/30 px-4 py-2 text-xs font-extrabold uppercase tracking-widest text-bone transition hover:border-sun hover:text-sun focus:outline-none focus-visible:ring-2 focus-visible:ring-mas">
+                YouTube <span aria-hidden="true">↗</span><span class="sr-only">(opens in a new tab) — Football and matchday culture</span>
+              </a>
+            </div>
+          </li>
+
+          <!-- Caribbean -->
+          <li class="cat-card group relative flex flex-col overflow-hidden rounded-3xl border border-line bg-panel p-6 transition duration-300 hover:-translate-y-1 hover:rotate-1 hover:border-mas sm:p-8" data-category="diaspora">
+            <div class="flex items-start justify-between">
+              <span class="font-display text-7xl leading-none text-line transition-colors group-hover:text-mas" aria-hidden="true">02</span>
+              <span class="rounded-full border border-line px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-mute">Culture</span>
+            </div>
+            <h3 class="mt-8 font-display text-4xl uppercase leading-none">Caribbean &amp; Diaspora Vibes</h3>
+            <p class="mt-3 text-mute">Heritage, home and the people carrying it forward, wherever they landed.</p>
+            <ul class="mt-6 flex flex-wrap gap-2" aria-label="Formats">
+              <li class="rounded-md bg-mas/15 px-2.5 py-1 text-xs font-semibold text-mas">Cultural events</li>
+              <li class="rounded-md bg-mas/15 px-2.5 py-1 text-xs font-semibold text-mas">Street trivia</li>
+              <li class="rounded-md bg-mas/15 px-2.5 py-1 text-xs font-semibold text-mas">Carnival coverage</li>
+            </ul>
+            <div class="mt-8 flex flex-wrap gap-3 border-t border-line pt-6">
+              <a href="https://www.instagram.com/1nijel/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full bg-mas px-4 py-2 text-xs font-extrabold uppercase tracking-widest text-ink transition hover:bg-bone focus:outline-none focus-visible:ring-2 focus-visible:ring-mas focus-visible:ring-offset-2 focus-visible:ring-offset-panel">
+                Instagram <span aria-hidden="true">↗</span><span class="sr-only">(opens in a new tab) — Caribbean and diaspora vibes</span>
+              </a>
+              <a href="https://www.youtube.com/@1nijel-u5c/search?query=caribbean" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full border border-bone/30 px-4 py-2 text-xs font-extrabold uppercase tracking-widest text-bone transition hover:border-mas hover:text-mas focus:outline-none focus-visible:ring-2 focus-visible:ring-mas">
+                YouTube <span aria-hidden="true">↗</span><span class="sr-only">(opens in a new tab) — Caribbean and diaspora vibes</span>
+              </a>
+            </div>
+          </li>
+
+          <!-- Skits -->
+          <li class="cat-card group relative flex flex-col overflow-hidden rounded-3xl border border-line bg-panel p-6 transition duration-300 hover:-translate-y-1 hover:-rotate-1 hover:border-lagoon sm:p-8" data-category="skits">
+            <div class="flex items-start justify-between">
+              <span class="font-display text-7xl leading-none text-line transition-colors group-hover:text-lagoon" aria-hidden="true">03</span>
+              <span class="rounded-full border border-line px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-mute">Comedy</span>
+            </div>
+            <h3 class="mt-8 font-display text-4xl uppercase leading-none">Skits &amp; POVs</h3>
+            <p class="mt-3 text-mute">Everyday moments, exaggerated just enough to feel like your family group chat.</p>
+            <ul class="mt-6 flex flex-wrap gap-2" aria-label="Formats">
+              <li class="rounded-md bg-lagoon/15 px-2.5 py-1 text-xs font-semibold text-lagoon">Living room POVs</li>
+              <li class="rounded-md bg-lagoon/15 px-2.5 py-1 text-xs font-semibold text-lagoon">Commentary</li>
+              <li class="rounded-md bg-lagoon/15 px-2.5 py-1 text-xs font-semibold text-lagoon">Organic humor</li>
+            </ul>
+            <div class="mt-8 flex flex-wrap gap-3 border-t border-line pt-6">
+              <a href="https://www.instagram.com/1nijel/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full bg-lagoon px-4 py-2 text-xs font-extrabold uppercase tracking-widest text-ink transition hover:bg-bone focus:outline-none focus-visible:ring-2 focus-visible:ring-mas focus-visible:ring-offset-2 focus-visible:ring-offset-panel">
+                Instagram <span aria-hidden="true">↗</span><span class="sr-only">(opens in a new tab) — Skits and POVs</span>
+              </a>
+              <a href="https://www.youtube.com/@1nijel-u5c/shorts" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full border border-bone/30 px-4 py-2 text-xs font-extrabold uppercase tracking-widest text-bone transition hover:border-lagoon hover:text-lagoon focus:outline-none focus-visible:ring-2 focus-visible:ring-mas">
+                YouTube <span aria-hidden="true">↗</span><span class="sr-only">(opens in a new tab) — Skits and POVs</span>
+              </a>
+            </div>
+          </li>
+
+          <!-- Travel -->
+          <li class="cat-card group relative flex flex-col overflow-hidden rounded-3xl border border-line bg-panel p-6 transition duration-300 hover:-translate-y-1 hover:rotate-1 hover:border-jouvert sm:p-8" data-category="travel">
+            <div class="flex items-start justify-between">
+              <span class="font-display text-7xl leading-none text-line transition-colors group-hover:text-jouvert" aria-hidden="true">04</span>
+              <span class="rounded-full border border-line px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-mute">Travel</span>
+            </div>
+            <h3 class="mt-8 font-display text-4xl uppercase leading-none">Destination &amp; Travel</h3>
+            <p class="mt-3 text-mute">Island features and festival coverage, filmed like you're right there with me.</p>
+            <ul class="mt-6 flex flex-wrap gap-2" aria-label="Formats">
+              <li class="rounded-md bg-jouvert/15 px-2.5 py-1 text-xs font-semibold text-jouvert">Barbados features</li>
+              <li class="rounded-md bg-jouvert/15 px-2.5 py-1 text-xs font-semibold text-jouvert">Travel logs</li>
+              <li class="rounded-md bg-jouvert/15 px-2.5 py-1 text-xs font-semibold text-jouvert">Festival coverage</li>
+            </ul>
+            <div class="mt-8 flex flex-wrap gap-3 border-t border-line pt-6">
+              <a href="https://www.instagram.com/1nijel/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full bg-jouvert px-4 py-2 text-xs font-extrabold uppercase tracking-widest text-bone transition hover:bg-bone focus:outline-none focus-visible:ring-2 focus-visible:ring-mas focus-visible:ring-offset-2 focus-visible:ring-offset-panel">
+                Instagram <span aria-hidden="true">↗</span><span class="sr-only">(opens in a new tab) — Destination and travel</span>
+              </a>
+              <a href="https://www.youtube.com/@1nijel-u5c/search?query=barbados" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full border border-bone/30 px-4 py-2 text-xs font-extrabold uppercase tracking-widest text-bone transition hover:border-jouvert hover:text-jouvert focus:outline-none focus-visible:ring-2 focus-visible:ring-mas">
+                YouTube <span aria-hidden="true">↗</span><span class="sr-only">(opens in a new tab) — Destination and travel</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+
+        <!-- Featured clips -->
+        <div class="mt-24" aria-labelledby="featured-title">
+          <div class="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p class="font-mono text-xs uppercase tracking-[0.25em] text-lagoon">Flagship Clips</p>
+              <h3 id="featured-title" class="mt-3 font-display text-4xl uppercase leading-none sm:text-5xl">Featured drops</h3>
+            </div>
+            <p class="max-w-sm text-sm text-mute">Clips only load when you press play, so the page stays fast and nothing tracks you until then.</p>
+          </div>
+
+          <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:mx-auto lg:max-w-4xl">
+            <article class="featured-slot" data-slot="0">
+              <div class="slot-frame relative aspect-[9/16] overflow-hidden rounded-3xl border border-line bg-panel"></div>
+              <div class="mt-4 flex items-center justify-between gap-4">
+                <h4 class="slot-title font-display text-2xl uppercase leading-none"></h4>
+                <span class="slot-platform shrink-0 rounded-full border border-line px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-mute"></span>
+              </div>
+            </article>
+            <article class="featured-slot" data-slot="1">
+              <div class="slot-frame relative aspect-[9/16] overflow-hidden rounded-3xl border border-line bg-panel"></div>
+              <div class="mt-4 flex items-center justify-between gap-4">
+                <h4 class="slot-title font-display text-2xl uppercase leading-none"></h4>
+                <span class="slot-platform shrink-0 rounded-full border border-line px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-mute"></span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY COLLAB ============ -->
+    <section id="collab" class="scroll-mt-16 border-t border-line bg-gradient-to-b from-jouvert/30 via-ink to-ink py-20 sm:py-28" aria-labelledby="collab-title">
+      <div class="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-12 lg:px-8">
+        <div class="lg:col-span-5">
+          <p class="font-mono text-xs uppercase tracking-[0.25em] text-mas">02 — Work With Me</p>
+          <h2 id="collab-title" class="mt-3 font-display text-5xl uppercase leading-none sm:text-7xl">Why collab with <span class="bg-gradient-to-r from-mas to-sun bg-clip-text text-transparent">1nijel</span></h2>
+          <p class="mt-6 max-w-md text-lg text-mute">For brands, promoters, tourism boards and fellow creators who want reach that feels like word of mouth, not an ad.</p>
+
+          <figure class="relative mt-10 hidden aspect-[4/3] overflow-hidden rounded-3xl border border-line bg-panel sm:block">
+            <img
+              src="images/collab-host.jpg"
+              alt="1nijel on location with a crowd during a shoot"
+              class="photo h-full w-full object-cover"
+              width="800" height="600"
+              loading="lazy"
+              decoding="async"
+              data-fallback="collab-fallback">
+            <div id="collab-fallback" class="absolute inset-0 hidden flex-col items-center justify-center bg-panel" aria-hidden="true">
+              <span class="font-display text-7xl leading-none text-mas">NEVER TWO</span>
+              <span class="mt-2 font-mono text-xs uppercase tracking-[0.3em] text-mute">images/collab-host.jpg</span>
+            </div>
+          </figure>
+        </div>
+
+        <div class="lg:col-span-7">
+          <ul class="grid gap-5" role="list">
+            <li class="group rounded-3xl border border-line bg-ink p-6 transition hover:-translate-y-0.5 hover:border-mas sm:p-8">
+              <div class="flex items-start gap-5">
+                <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-mas text-ink -rotate-6" aria-hidden="true">
+                  <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v5M8 22h8"/></svg>
+                </span>
+                <div>
+                  <h3 class="font-display text-3xl uppercase leading-none">High-engagement street host</h3>
+                  <p class="mt-3 text-mute">I walk up to strangers and get real reactions on camera. Those moments get shared, stitched and argued about in the comments, so your message travels further than a polished spot would.</p>
+                </div>
+              </div>
+            </li>
+            <li class="group rounded-3xl border border-line bg-ink p-6 transition hover:-translate-y-0.5 hover:border-mas sm:p-8">
+              <div class="flex items-start gap-5">
+                <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-sun text-ink -rotate-6" aria-hidden="true">
+                  <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><circle cx="17" cy="9" r="2.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M15 20a5 5 0 0 1 6.5-4.8"/></svg>
+                </span>
+                <div>
+                  <h3 class="font-display text-3xl uppercase leading-none">Authentic grassroots connection</h3>
+                  <p class="mt-3 text-mute">I'm part of the communities I film: matchday crowds, Caribbean diaspora, carnival. People trust the content because they recognise themselves in it.</p>
+                </div>
+              </div>
+            </li>
+            <li class="group rounded-3xl border border-line bg-ink p-6 transition hover:-translate-y-0.5 hover:border-mas sm:p-8">
+              <div class="flex items-start gap-5">
+                <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-lagoon text-ink -rotate-6" aria-hidden="true">
+                  <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 10l5-3v10l-5-3"/><rect x="2" y="6" width="13" height="12" rx="2"/></svg>
+                </span>
+                <div>
+                  <h3 class="font-display text-3xl uppercase leading-none">Technical production quality</h3>
+                  <p class="mt-3 text-mute">I'm an engineer by day, and I bring that discipline to the shoot: clean audio, sharp edits, fast turnaround, and deliverables cut for every platform.</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="mt-8 flex flex-col gap-4 rounded-3xl bg-gradient-to-r from-mas via-sun to-feather p-6 text-ink sm:flex-row sm:items-center sm:justify-between sm:p-8">
+            <div>
+              <p class="font-display text-3xl uppercase leading-none">Got a brief?</p>
+              <p class="mt-2 text-sm font-semibold">Sponsored segments, event coverage, brand activations and creator crossovers.</p>
+            </div>
+            <a href="mailto:1nijelcollab@gmail.com?subject=Collab%20with%201nijel" class="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-ink px-6 py-3.5 text-sm font-extrabold uppercase tracking-widest text-feather transition hover:bg-panel focus:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2 focus-visible:ring-offset-mas">
+              Let's Collab <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER / CONTACT ============ -->
+  <footer class="border-t border-line" aria-labelledby="footer-title">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+      <h2 id="footer-title" class="font-display text-[clamp(3rem,14vw,11rem)] uppercase leading-[0.85] tracking-tight">
+        1nijel<span class="text-feather">,</span><br><span class="bg-gradient-to-r from-mas via-sun to-jouvert bg-clip-text pr-2 text-transparent">never two.</span>
+      </h2>
+
+      <ul class="mt-12 grid gap-px overflow-hidden rounded-3xl border border-line bg-line sm:grid-cols-2 lg:grid-cols-4" role="list">
+        <li>
+          <a href="https://www.instagram.com/1nijel/" target="_blank" rel="noopener noreferrer" class="group flex h-full items-center justify-between bg-ink p-6 transition hover:bg-panel focus:outline-none focus-visible:bg-panel">
+            <span>
+              <span class="block font-mono text-[10px] uppercase tracking-[0.25em] text-mute">Instagram</span>
+              <span class="mt-1 block text-lg font-bold">@1nijel</span>
+            </span>
+            <span class="text-2xl text-mute transition group-hover:translate-x-1 group-hover:text-mas" aria-hidden="true">↗</span>
+            <span class="sr-only">(opens in a new tab)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@1nijel-u5c" target="_blank" rel="noopener noreferrer" class="group flex h-full items-center justify-between bg-ink p-6 transition hover:bg-panel focus:outline-none focus-visible:bg-panel">
+            <span>
+              <span class="block font-mono text-[10px] uppercase tracking-[0.25em] text-mute">YouTube</span>
+              <span class="mt-1 block text-lg font-bold">@1nijel</span>
+            </span>
+            <span class="text-2xl text-mute transition group-hover:translate-x-1 group-hover:text-mas" aria-hidden="true">↗</span>
+            <span class="sr-only">(opens in a new tab)</span>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:1nijelcollab@gmail.com?subject=Collab%20with%201nijel" class="group flex h-full items-center justify-between bg-ink p-6 transition hover:bg-panel focus:outline-none focus-visible:bg-panel">
+            <span>
+              <span class="block font-mono text-[10px] uppercase tracking-[0.25em] text-mute">Email</span>
+              <span class="mt-1 block text-lg font-bold">1nijelcollab@gmail.com</span>
+            </span>
+            <span class="text-2xl text-mute transition group-hover:translate-x-1 group-hover:text-mas" aria-hidden="true">→</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://1nijel.com/" class="group flex h-full items-center justify-between bg-ink p-6 transition hover:bg-panel focus:outline-none focus-visible:bg-panel">
+            <span>
+              <span class="block font-mono text-[10px] uppercase tracking-[0.25em] text-mute">Website</span>
+              <span class="mt-1 block text-lg font-bold">1nijel.com</span>
+            </span>
+            <span class="text-2xl text-mute transition group-hover:translate-x-1 group-hover:text-mas" aria-hidden="true">→</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="mt-10 flex flex-col gap-3 font-mono text-[11px] uppercase tracking-[0.2em] text-mute sm:flex-row sm:items-center sm:justify-between">
+        <p>© <span id="year">2026</span> 1nijel. Painted in mas colours, from J'ouvert to last lap.</p>
+        <p>Engineer half the day <span class="text-mas">✺</span> Enjoyment minister the rest</p>
+        <a href="#top" class="w-fit hover:text-mas">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      'use strict';
+
+      // Featured clips. Set `id` to a YouTube Short ID (the part after /shorts/)
+      // or an Instagram Reel ID (the part after /reel/). Empty ids link to the profile.
+      var FEATURED = [
+        { platform: 'youtube', id: '', title: 'Matchday Street Interview' },
+        { platform: 'instagram', id: '', title: 'Carnival Coverage' }
+      ];
+
+      var PROFILES = {
+        youtube: 'https://www.youtube.com/@1nijel-u5c/shorts',
+        instagram: 'https://www.instagram.com/1nijel/'
+      };
+
+      var ID_PATTERN = /^[A-Za-z0-9_-]{5,20}$/;
+
+      function el(tag, className, text) {
+        var node = document.createElement(tag);
+        if (className) node.className = className;
+        if (text) node.textContent = text;
+        return node;
+      }
+
+      function playIcon() {
+        var ns = 'http://www.w3.org/2000/svg';
+        var svg = document.createElementNS(ns, 'svg');
+        svg.setAttribute('viewBox', '0 0 24 24');
+        svg.setAttribute('class', 'ml-1 h-8 w-8');
+        svg.setAttribute('aria-hidden', 'true');
+        var path = document.createElementNS(ns, 'path');
+        path.setAttribute('d', 'M8 5v14l11-7z');
+        path.setAttribute('fill', 'currentColor');
+        svg.appendChild(path);
+        return svg;
+      }
+
+      function embedUrl(clip) {
+        if (clip.platform === 'youtube') {
+          return 'https://www.youtube-nocookie.com/embed/' + clip.id + '?autoplay=1&playsinline=1&rel=0&modestbranding=1';
+        }
+        return 'https://www.instagram.com/reel/' + clip.id + '/embed/';
+      }
+
+      function renderSlot(slot, clip) {
+        var frame = slot.querySelector('.slot-frame');
+        var platformLabel = clip.platform === 'youtube' ? 'YouTube Shorts' : 'Instagram Reels';
+        slot.querySelector('.slot-title').textContent = clip.title;
+        slot.querySelector('.slot-platform').textContent = platformLabel;
+
+        var hasId = ID_PATTERN.test(clip.id || '');
+        var base = 'group absolute inset-0 flex h-full w-full flex-col items-center justify-center gap-5 p-6 text-center focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-mas';
+
+        if (!hasId) {
+          var link = el('a', base);
+          link.href = PROFILES[clip.platform];
+          link.target = '_blank';
+          link.rel = 'noopener noreferrer';
+          link.setAttribute('aria-label', clip.title + ': watch on ' + platformLabel + ' (opens in a new tab)');
+          link.appendChild(el('span', 'font-display text-8xl leading-none text-line transition-colors group-hover:text-mas', '1N'));
+          link.appendChild(el('span', 'font-display text-3xl uppercase leading-none', clip.title));
+          link.appendChild(el('span', 'rounded-full bg-mas px-4 py-2 text-xs font-extrabold uppercase tracking-widest text-ink', 'Watch on ' + (clip.platform === 'youtube' ? 'YouTube' : 'Instagram') + ' ↗'));
+          frame.appendChild(link);
+          return;
+        }
+
+        var button = el('button', base);
+        button.type = 'button';
+        button.setAttribute('aria-label', 'Play ' + clip.title + ' from ' + platformLabel);
+
+        if (clip.platform === 'youtube') {
+          var thumb = el('img', 'absolute inset-0 h-full w-full object-cover opacity-70 transition-opacity group-hover:opacity-90');
+          thumb.src = 'https://i.ytimg.com/vi/' + clip.id + '/hq720.jpg';
+          thumb.alt = '';
+          thumb.loading = 'lazy';
+          thumb.decoding = 'async';
+          button.appendChild(thumb);
+        } else {
+          button.appendChild(el('span', 'absolute inset-0 bg-gradient-to-br from-panel via-ink to-panel'));
+        }
+
+        var disc = el('span', 'relative flex h-20 w-20 items-center justify-center rounded-full bg-mas text-ink shadow-[0_0_60px_rgba(255,46,136,0.45)] transition-transform group-hover:scale-110');
+        disc.appendChild(playIcon());
+        button.appendChild(disc);
+        button.appendChild(el('span', 'relative rounded-full bg-ink/80 px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-bone', 'Tap to load'));
+
+        button.addEventListener('click', function () {
+          var iframe = document.createElement('iframe');
+          iframe.src = embedUrl(clip);
+          iframe.title = clip.title + ' — ' + platformLabel;
+          iframe.className = 'absolute inset-0 h-full w-full';
+          iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+          iframe.setAttribute('allowfullscreen', '');
+          iframe.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
+          iframe.setAttribute('loading', 'lazy');
+          frame.replaceChildren(iframe);
+          iframe.focus();
+        }, { once: true });
+
+        frame.appendChild(button);
+      }
+
+      document.querySelectorAll('.featured-slot').forEach(function (slot) {
+        var clip = FEATURED[Number(slot.getAttribute('data-slot'))];
+        if (clip) renderSlot(slot, clip);
+      });
+
+      // Image fallbacks (no inline handlers, CSP-safe)
+      document.querySelectorAll('img.photo').forEach(function (img) {
+        function showFallback() {
+          img.classList.add('hidden');
+          var fb = document.getElementById(img.getAttribute('data-fallback'));
+          if (fb) { fb.classList.remove('hidden'); fb.classList.add('flex'); }
+        }
+        if (img.complete && img.naturalWidth === 0) showFallback();
+        else img.addEventListener('error', showFallback, { once: true });
+      });
+
+      // Mobile menu
+      var toggle = document.getElementById('menu-toggle');
+      var menu = document.getElementById('mobile-menu');
+      var toggleLabel = document.getElementById('menu-toggle-label');
+      var bars = {
+        top: toggle.querySelector('[data-bar="top"]'),
+        mid: toggle.querySelector('[data-bar="mid"]'),
+        bot: toggle.querySelector('[data-bar="bot"]')
+      };
+
+      function setMenu(open) {
+        toggle.setAttribute('aria-expanded', String(open));
+        var label = open ? 'Close menu' : 'Open menu';
+        toggle.setAttribute('aria-label', label);
+        toggleLabel.textContent = label;
+        menu.classList.toggle('hidden', !open);
+        bars.top.classList.toggle('-translate-y-1.5', !open);
+        bars.top.classList.toggle('rotate-45', open);
+        bars.bot.classList.toggle('translate-y-1.5', !open);
+        bars.bot.classList.toggle('-rotate-45', open);
+        bars.mid.classList.toggle('opacity-0', open);
+        document.body.classList.toggle('overflow-hidden', open);
+      }
+
+      toggle.addEventListener('click', function () {
+        setMenu(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      menu.querySelectorAll('.mobile-link').forEach(function (link) {
+        link.addEventListener('click', function () { setMenu(false); });
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+          setMenu(false);
+          toggle.focus();
+        }
+      });
+      window.matchMedia('(min-width: 768px)').addEventListener('change', function (e) {
+        if (e.matches) setMenu(false);
+      });
+
+      // Header background on scroll
+      var header = document.getElementById('site-header');
+      function onScroll() {
+        var scrolled = window.scrollY > 12;
+        header.classList.toggle('bg-ink/85', scrolled);
+        header.classList.toggle('backdrop-blur-md', scrolled);
+        header.classList.toggle('border-line', scrolled);
+        header.classList.toggle('border-transparent', !scrolled);
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      // Category filters
+      var filterBtns = document.querySelectorAll('.filter-btn');
+      var cards = document.querySelectorAll('.cat-card');
+      var status = document.getElementById('filter-status');
+      var ACTIVE = ['bg-mas', 'border-mas', 'text-ink'];
+      var IDLE = ['border-line', 'text-mute', 'hover:border-bone', 'hover:text-bone'];
+
+      function applyFilter(value) {
+        var shown = 0;
+        cards.forEach(function (card) {
+          var match = value === 'all' || card.getAttribute('data-category') === value;
+          card.hidden = !match;
+          if (match) shown++;
+        });
+        filterBtns.forEach(function (btn) {
+          var active = btn.getAttribute('data-filter') === value;
+          btn.setAttribute('aria-pressed', String(active));
+          ACTIVE.forEach(function (c) { btn.classList.toggle(c, active); });
+          IDLE.forEach(function (c) { btn.classList.toggle(c, !active); });
+        });
+        status.textContent = 'Showing ' + shown + (shown === 1 ? ' category' : ' categories');
+      }
+
+      filterBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () { applyFilter(btn.getAttribute('data-filter')); });
+      });
+      applyFilter('all');
+      status.textContent = '';
+
+      // Active nav link
+      var navLinks = document.querySelectorAll('.nav-link');
+      if ('IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (!entry.isIntersecting) return;
+            var id = entry.target.id === 'top' ? 'about' : entry.target.id;
+            navLinks.forEach(function (link) {
+              var current = link.getAttribute('href') === '#' + id;
+              link.classList.toggle('text-mas', current);
+              link.classList.toggle('text-mute', !current);
+              if (current) link.setAttribute('aria-current', 'true');
+              else link.removeAttribute('aria-current');
+            });
+          });
+        }, { rootMargin: '-45% 0px -50% 0px' });
+        ['top', 'categories', 'collab'].forEach(function (id) {
+          var section = document.getElementById(id);
+          if (section) observer.observe(section);
+        });
+      }
+
+      document.getElementById('year').textContent = String(new Date().getFullYear());
+    })();
+  </script>
+</body>
+</html>

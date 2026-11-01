@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en" class="motion-safe:scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://i.ytimg.com; frame-src https://www.youtube-nocookie.com https://www.instagram.com; connect-src 'self'; media-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#F7F6F2">
+
+  <title>1nijel — 1nijel, never two</title>
+  <meta name="description" content="1nijel: street culture host, skit creator and storyteller covering football matchday culture, Caribbean heritage, diaspora vibes and vlogs. Engineer half the day, enjoyment minister the rest.">
+  <meta name="author" content="1nijel">
+  <link rel="canonical" href="https://1nijel.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="1nijel — 1nijel, never two">
+  <meta property="og:description" content="Street interviews, fan reactions, skits, Caribbean and diaspora culture. Brand and creator collabs welcome.">
+  <meta property="og:url" content="https://1nijel.com/">
+  <meta property="og:image" content="https://1nijel.com/images/hero-host.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="1nijel — 1nijel, never two">
+  <meta name="twitter:description" content="Street interviews, fan reactions, skits, Caribbean and diaspora culture.">
+  <meta name="twitter:image" content="https://1nijel.com/images/hero-host.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;700;800;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap">
+  <link rel="preload" as="image" href="images/hero-host.jpg" fetchpriority="high">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/head.js?v=1793502616"></script>
+  <style>
+    :root { color-scheme: light; }
+    body { background: #F7F6F2; color: #0F1115; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    ::selection { background: #FFC726; color: #0F1115; }
+    .cat-card[hidden] { display: none; }
+    @media (prefers-reduced-motion: no-preference) {
+      .js .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s cubic-bezier(.2,.7,.2,1); }
+      .js .reveal.is-in { opacity: 1; transform: none; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .animate-marquee { animation: none; }
+    }
+  </style>
+</head>
+
+<body class="bg-paper font-sans text-ink antialiased">
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-ink focus:px-4 focus:py-2 focus:font-semibold focus:text-white">Skip to content</a>
+
+  <!-- ============ HEADER / NAV ============ -->
+  <header id="site-header" class="fixed inset-x-0 top-0 z-50 border-b border-transparent transition-colors duration-300">
+    <div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <a href="#top" class="flex items-center gap-3" aria-label="1nijel home">
+        <span class="flex h-9 w-9 items-center justify-center rounded-xl bg-blue font-display text-sm font-black text-white" aria-hidden="true">1N</span>
+        <span class="flex flex-col leading-none">
+          <span class="font-display text-lg font-extrabold tracking-tight">1nijel</span>
+          <span class="mt-0.5 text-[11px] font-medium text-mute">1nijel, never two</span>
+        </span>
+      </a>
+
+      <nav aria-label="Primary" class="hidden md:block">
+        <ul class="flex items-center gap-1 text-sm font-semibold">
+          <li><a href="#about" class="nav-link rounded-full px-4 py-2 text-mute transition hover:bg-white hover:text-ink">About</a></li>
+          <li><a href="#categories" class="nav-link rounded-full px-4 py-2 text-mute transition hover:bg-white hover:text-ink">Categories</a></li>
+          <li><a href="#collab" class="nav-link rounded-full px-4 py-2 text-mute transition hover:bg-white hover:text-ink">Collab</a></li>
+          <li class="pl-3">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=1nijelcollab@gmail.com&su=Collab%20with%201nijel" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-full bg-ink px-5 py-2.5 text-white transition hover:bg-blue focus:outline-none focus-visible:ring-2 focus-visible:ring-blue focus-visible:ring-offset-2">
+              Work with me <span aria-hidden="true">→</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <button id="menu-toggle" type="button" class="relative inline-flex h-11 w-11 items-center justify-center rounded-full border border-line bg-white md:hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-blue" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu">
+        <span aria-hidden="true" class="absolute block h-0.5 w-5 -translate-y-1.5 rounded bg-ink transition-transform duration-300" data-bar="top"></span>
+        <span aria-hidden="true" class="absolute block h-0.5 w-5 rounded bg-ink transition-opacity duration-300" data-bar="mid"></span>
+        <span aria-hidden="true" class="absolute block h-0.5 w-5 translate-y-1.5 rounded bg-ink transition-transform duration-300" data-bar="bot"></span>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden border-t border-line bg-paper md:hidden">
+      <nav aria-label="Mobile">
+        <ul class="flex flex-col gap-1 px-4 py-5 font-display text-3xl font-extrabold tracking-tight">
+          <li><a href="#about" class="mobile-link block rounded-2xl px-3 py-3 hover:bg-white">About</a></li>
+          <li><a href="#categories" class="mobile-link block rounded-2xl px-3 py-3 hover:bg-white">Categories</a></li>
+          <li><a href="#collab" class="mobile-link block rounded-2xl px-3 py-3 hover:bg-white">Collab</a></li>
+          <li class="px-3 pt-3">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=1nijelcollab@gmail.com&su=Collab%20with%201nijel" target="_blank" rel="noopener" class="mobile-link flex w-full items-center justify-center rounded-full bg-blue px-6 py-4 font-sans text-base font-bold text-white">Work with me →</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section id="top" class="pt-20 sm:pt-24" aria-labelledby="hero-title">
+      <div class="mx-auto grid max-w-7xl gap-4 px-4 sm:px-6 lg:grid-cols-12 lg:px-8">
+
+        <!-- Intro card -->
+        <div id="about" class="scroll-mt-24 rounded-[2rem] border border-line bg-white p-6 shadow-card sm:p-10 lg:col-span-7 lg:p-12">
+          <p class="inline-flex items-center gap-2 rounded-full bg-blue-sky px-3 py-1.5 text-xs font-semibold text-blue">
+            <span class="relative flex h-2 w-2" aria-hidden="true">
+              <span class="absolute inline-flex h-full w-full rounded-full bg-blue opacity-60 motion-safe:animate-ping"></span>
+              <span class="relative inline-flex h-2 w-2 rounded-full bg-blue"></span>
+            </span>
+            Host · Creator · @1nijel
+          </p>
+
+          <h1 id="hero-title" class="mt-6 font-display text-[clamp(3.25rem,10vw,6.75rem)] font-black leading-[0.92] tracking-tightest">
+            1nijel,<br>
+            never <span class="relative inline-block text-blue"><span class="relative z-10">two.</span><span class="absolute -bottom-0.5 left-0 right-2 h-3 rounded-full bg-gold sm:h-4" aria-hidden="true"></span></span>
+          </h1>
+
+          <p class="mt-8 max-w-xl text-lg leading-relaxed text-mute sm:text-xl">
+            I capture <strong class="font-semibold text-ink">authentic human reactions</strong>, host <strong class="font-semibold text-ink">street interviews</strong>, make <strong class="font-semibold text-ink">relatable skits</strong>, and explore <strong class="font-semibold text-ink">sports, Caribbean heritage and diaspora culture</strong>.
+          </p>
+
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a href="#categories" class="group inline-flex items-center justify-center gap-2 rounded-full bg-blue px-7 py-4 text-sm font-bold text-white shadow-lift transition hover:-translate-y-0.5 hover:bg-blue-deep focus:outline-none focus-visible:ring-2 focus-visible:ring-blue focus-visible:ring-offset-2">
+              Explore Categories
+              <svg class="h-4 w-4 transition-transform group-hover:translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+            </a>
+            <a href="#collab" class="group inline-flex items-center justify-center gap-2 rounded-full border border-line bg-white px-7 py-4 text-sm font-bold text-ink transition hover:border-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-blue focus-visible:ring-offset-2">
+              Let's Collab
+              <svg class="h-4 w-4 transition-transform group-hover:translate-x-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Photo card -->
+        <figure class="relative min-h-[28rem] overflow-hidden rounded-[2rem] bg-blue-sky shadow-card lg:col-span-5 lg:row-span-2">
+          <img
+            src="images/hero-host.jpg"
+            alt="1nijel holding a microphone, ready for a street interview"
+            class="photo absolute inset-0 h-full w-full object-cover object-top"
+            width="800" height="1000"
+            fetchpriority="high"
+            decoding="async"
+            data-fallback="hero-fallback">
+          <div id="hero-fallback" class="absolute inset-0 hidden flex-col items-center justify-center bg-gradient-to-br from-blue to-blue-deep" aria-hidden="true">
+            <span class="font-display text-[8rem] font-black leading-none tracking-tightest text-white">1N</span>
+            <span class="mt-2 font-mono text-xs text-white/70">images/hero-host.jpg</span>
+          </div>
+          <figcaption class="absolute inset-x-4 bottom-4 flex items-center justify-between gap-3 rounded-2xl bg-white/90 p-4 backdrop-blur-md">
+            <span class="flex items-center gap-3">
+              <span class="flex h-10 w-10 items-center justify-center rounded-full bg-gold" aria-hidden="true">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v5"/></svg>
+              </span>
+              <span>
+                <span class="block text-xs font-medium text-mute">On the mic</span>
+                <span class="block font-display text-lg font-extrabold leading-tight">@1nijel</span>
+              </span>
+            </span>
+            <a href="https://www.instagram.com/1nijel/" target="_blank" rel="noopener noreferrer" class="rounded-full bg-ink px-4 py-2 text-xs font-bold text-white transition hover:bg-blue">
+              Follow <span aria-hidden="true">↗</span><span class="sr-only">1nijel on Instagram (opens in a new tab)</span>
+            </a>
+          </figcaption>
+        </figure>
+
+        <!-- Split identity tiles -->
+        <div class="grid gap-4 sm:grid-cols-2 lg:col-span-7">
+          <div class="flex flex-col justify-between gap-10 rounded-[2rem] bg-blue p-7 text-white shadow-card">
+            <span class="inline-flex w-fit items-center gap-2 rounded-full bg-white/15 px-3 py-1 text-xs font-semibold">
+              <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="5"/></svg>
+              Half the day
+            </span>
+            <p class="font-display text-4xl font-black leading-none tracking-tight">Engineer.</p>
+          </div>
+          <div class="flex flex-col justify-between gap-10 rounded-[2rem] bg-gold p-7 text-ink shadow-card">
+            <span class="inline-flex w-fit items-center gap-2 rounded-full bg-ink/10 px-3 py-1 text-xs font-semibold">
+              <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+              The rest
+            </span>
+            <p class="font-display text-4xl font-black leading-none tracking-tight">Enjoyment minister.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ticker -->
+      <div class="mt-16 overflow-hidden border-y border-line bg-white py-4" aria-hidden="true">
+        <div class="flex w-max animate-marquee whitespace-nowrap font-display text-2xl font-extrabold tracking-tight">
+          <span class="flex items-center gap-8 pr-8">
+            <span>Matchday culture</span><span class="h-2.5 w-2.5 rounded-full bg-gold"></span>
+            <span class="text-blue">Street interviews</span><span class="h-2.5 w-2.5 rounded-full bg-gold"></span>
+            <span>Fan reactions</span><span class="h-2.5 w-2.5 rounded-full bg-gold"></span>
+            <span class="text-blue">Diaspora vibes</span><span class="h-2.5 w-2.5 rounded-full bg-gold"></span>
+            <span>Skits &amp; POVs</span><span class="h-2.5 w-2.5 rounded-full bg-gold"></span>
+            <span class="text-blue">Vlogs</span><span class="h-2.5 w-2.5 rounded-full bg-gold"></span>
+          </span>
+          <span class="flex items-center gap-8 pr-8">
+            <span>Matchday culture</span><span class="h-2.5 w-2.5 rounded-full bg-gold"></span>
+            <span class="text-blue">Street interviews</span><span class="h-2.5 w-2.5 rounded-full bg-gold"></span>
+            <span>Fan reactions</span><span class="h-2.5 w-2.5 rounded-full bg-gold"></span>
+            <span class="text-blue">Diaspora vibes</span><span class="h-2.5 w-2.5 rounded-full bg-gold"></span>
+            <span>Skits &amp; POVs</span><span class="h-2.5 w-2.5 rounded-full bg-gold"></span>
+            <span class="text-blue">Vlogs</span><span class="h-2.5 w-2.5 rounded-full bg-gold"></span>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CATEGORIES ============ -->
+    <section id="categories" class="scroll-mt-16 py-20 sm:py-28" aria-labelledby="categories-title">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="reveal flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+          <div>
+            <p class="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-blue">01 · Content</p>
+            <h2 id="categories-title" class="mt-3 font-display text-5xl font-black leading-[0.95] tracking-tightest sm:text-6xl">Four lanes.<br class="sm:hidden"> One Nijel.</h2>
+            <p class="mt-4 max-w-md text-lg text-mute">Tap a lane to see every clip in it.</p>
+          </div>
+
+          <div class="-mx-4 overflow-x-auto px-4 pb-1 lg:mx-0 lg:px-0">
+            <div class="flex w-max gap-1 rounded-full border border-line bg-white p-1" role="group" aria-label="Filter content categories">
+              <button type="button" class="filter-btn rounded-full px-4 py-2 text-sm font-semibold transition focus:outline-none focus-visible:ring-2 focus-visible:ring-blue" data-filter="all" aria-pressed="true">All</button>
+              <button type="button" class="filter-btn rounded-full px-4 py-2 text-sm font-semibold transition focus:outline-none focus-visible:ring-2 focus-visible:ring-blue" data-filter="football" aria-pressed="false">Football</button>
+              <button type="button" class="filter-btn rounded-full px-4 py-2 text-sm font-semibold transition focus:outline-none focus-visible:ring-2 focus-visible:ring-blue" data-filter="diaspora" aria-pressed="false">Diaspora</button>
+              <button type="button" class="filter-btn rounded-full px-4 py-2 text-sm font-semibold transition focus:outline-none focus-visible:ring-2 focus-visible:ring-blue" data-filter="skits" aria-pressed="false">Skits</button>
+              <button type="button" class="filter-btn rounded-full px-4 py-2 text-sm font-semibold transition focus:outline-none focus-visible:ring-2 focus-visible:ring-blue" data-filter="vlogs" aria-pressed="false">Vlogs</button>
+            </div>
+          </div>
+        </div>
+        <p id="filter-status" class="sr-only" aria-live="polite"></p>
+
+        <ul id="category-grid" class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4" role="list">
+          <!-- Football -->
+          <li class="cat-card reveal group relative flex flex-col overflow-hidden rounded-[2rem] focus-within:ring-2 focus-within:ring-blue focus-within:ring-offset-2 focus-within:ring-offset-paper border border-line bg-white shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-lift" data-category="football">
+            <div class="relative flex h-44 flex-col justify-between bg-blue p-6 text-white">
+              <div class="flex items-start justify-between">
+                <span class="font-mono text-xs font-semibold text-white/70">01</span>
+                <span class="rounded-full bg-white/15 px-3 py-1 text-xs font-semibold">Sports</span>
+              </div>
+              <svg class="h-14 w-14 transition-transform duration-300 group-hover:rotate-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M12 7.5l4.2 3-1.6 5h-5.2l-1.6-5z"/><path d="M12 7.5V2.5M16.2 10.5l4.8-1.5M14.6 15.5l3 4M9.4 15.5l-3 4M7.8 10.5L3 9"/></svg>
+            </div>
+            <div class="flex flex-1 flex-col p-6">
+              <h3 class="font-display text-2xl font-extrabold leading-tight tracking-tight">Football &amp; Matchday Culture</h3>
+              <p class="mt-2 text-sm leading-relaxed text-mute">Everything related to the beautiful game.</p>
+              <ul class="mt-4 flex flex-wrap gap-1.5" aria-label="Formats">
+                <li class="rounded-full bg-blue-sky px-2.5 py-1 text-xs font-semibold text-blue">Street interviews</li>
+                <li class="rounded-full bg-blue-sky px-2.5 py-1 text-xs font-semibold text-blue">Fan reactions</li>
+                <li class="rounded-full bg-blue-sky px-2.5 py-1 text-xs font-semibold text-blue">Pub debates</li>
+              </ul>
+              <div class="mt-auto flex items-center justify-between gap-3 pt-6">
+                <span class="lane-count text-xs font-semibold text-mute" data-lane="football"></span>
+                <a href="football.html" class="inline-flex items-center gap-2 rounded-full bg-ink px-4 py-2.5 text-xs font-bold text-white transition after:absolute after:inset-0 after:content-[''] group-hover:bg-blue focus:outline-none">
+                  Open lane <span aria-hidden="true">→</span><span class="sr-only">: Football and matchday culture</span>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <!-- Diaspora -->
+          <li class="cat-card reveal group relative flex flex-col overflow-hidden rounded-[2rem] focus-within:ring-2 focus-within:ring-blue focus-within:ring-offset-2 focus-within:ring-offset-paper border border-line bg-white shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-lift" data-category="diaspora">
+            <div class="relative flex h-44 flex-col justify-between bg-gold p-6 text-ink">
+              <div class="flex items-start justify-between">
+                <span class="font-mono text-xs font-semibold text-ink/60">02</span>
+                <span class="rounded-full bg-ink/10 px-3 py-1 text-xs font-semibold">Culture</span>
+              </div>
+              <svg class="h-14 w-14 transition-transform duration-300 group-hover:-translate-y-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21V10"/><path d="M12 10c-1.5-3-4.5-4-8-3.5 1.5 1 2.5 2.5 3 4M12 10c1.5-3 4.5-4 8-3.5-1.5 1-2.5 2.5-3 4M12 10c-.5-3.5 1-6 3.5-7.5M12 10c.5-3.5-1-6-3.5-7.5"/><path d="M3 21h18"/></svg>
+            </div>
+            <div class="flex flex-1 flex-col p-6">
+              <h3 class="font-display text-2xl font-extrabold leading-tight tracking-tight">Diaspora Culture</h3>
+              <p class="mt-2 text-sm leading-relaxed text-mute">Heritage, home, and the people carrying it forward wherever they live now.</p>
+              <ul class="mt-4 flex flex-wrap gap-1.5" aria-label="Formats">
+                <li class="rounded-full bg-gold-cream px-2.5 py-1 text-xs font-semibold text-ink">Cultural events</li>
+                <li class="rounded-full bg-gold-cream px-2.5 py-1 text-xs font-semibold text-ink">Street trivia</li>
+                <li class="rounded-full bg-gold-cream px-2.5 py-1 text-xs font-semibold text-ink">Street interviews</li>
+              </ul>
+              <div class="mt-auto flex items-center justify-between gap-3 pt-6">
+                <span class="lane-count text-xs font-semibold text-mute" data-lane="diaspora"></span>
+                <a href="diaspora.html" class="inline-flex items-center gap-2 rounded-full bg-ink px-4 py-2.5 text-xs font-bold text-white transition after:absolute after:inset-0 after:content-[''] group-hover:bg-blue focus:outline-none">
+                  Open lane <span aria-hidden="true">→</span><span class="sr-only">: Diaspora culture</span>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <!-- Skits -->
+          <li class="cat-card reveal group relative flex flex-col overflow-hidden rounded-[2rem] focus-within:ring-2 focus-within:ring-blue focus-within:ring-offset-2 focus-within:ring-offset-paper border border-line bg-white shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-lift" data-category="skits">
+            <div class="relative flex h-44 flex-col justify-between bg-ink p-6 text-white">
+              <div class="flex items-start justify-between">
+                <span class="font-mono text-xs font-semibold text-white/60">03</span>
+                <span class="rounded-full bg-white/10 px-3 py-1 text-xs font-semibold">Comedy</span>
+              </div>
+              <svg class="h-14 w-14 text-gold transition-transform duration-300 group-hover:-rotate-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.5L3 20.5l1.6-5.2A8.4 8.4 0 1 1 21 11.5z"/><path d="M8.5 10h.01M15.5 10h.01"/><path d="M8.5 13.5a4.5 4.5 0 0 0 7 0"/></svg>
+            </div>
+            <div class="flex flex-1 flex-col p-6">
+              <h3 class="font-display text-2xl font-extrabold leading-tight tracking-tight">Skits &amp; POVs</h3>
+              <p class="mt-2 text-sm leading-relaxed text-mute">Everyday, relatable moments.</p>
+              <ul class="mt-4 flex flex-wrap gap-1.5" aria-label="Formats">
+                <li class="rounded-full bg-paper px-2.5 py-1 text-xs font-semibold text-ink">Living room POVs</li>
+                <li class="rounded-full bg-paper px-2.5 py-1 text-xs font-semibold text-ink">Commentary</li>
+                <li class="rounded-full bg-paper px-2.5 py-1 text-xs font-semibold text-ink">Organic humor</li>
+              </ul>
+              <div class="mt-auto flex items-center justify-between gap-3 pt-6">
+                <span class="lane-count text-xs font-semibold text-mute" data-lane="skits"></span>
+                <a href="skits.html" class="inline-flex items-center gap-2 rounded-full bg-ink px-4 py-2.5 text-xs font-bold text-white transition after:absolute after:inset-0 after:content-[''] group-hover:bg-blue focus:outline-none">
+                  Open lane <span aria-hidden="true">→</span><span class="sr-only">: Skits and POVs</span>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <!-- Vlogs -->
+          <li class="cat-card reveal group relative flex flex-col overflow-hidden rounded-[2rem] focus-within:ring-2 focus-within:ring-blue focus-within:ring-offset-2 focus-within:ring-offset-paper border border-line bg-white shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-lift" data-category="vlogs">
+            <div class="relative flex h-44 flex-col justify-between bg-blue-sky p-6 text-blue">
+              <div class="flex items-start justify-between">
+                <span class="font-mono text-xs font-semibold text-blue/70">04</span>
+                <span class="rounded-full bg-blue/10 px-3 py-1 text-xs font-semibold">Lifestyle</span>
+              </div>
+              <svg class="h-14 w-14 transition-transform duration-300 group-hover:scale-110" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8.5A2.5 2.5 0 0 1 5.5 6h1.8l1.5-2h6.4l1.5 2h1.8A2.5 2.5 0 0 1 21 8.5v9a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 17.5z"/><circle cx="12" cy="13" r="3.8"/><circle cx="17.6" cy="9.2" r=".6" fill="currentColor"/></svg>
+            </div>
+            <div class="flex flex-1 flex-col p-6">
+              <h3 class="font-display text-2xl font-extrabold leading-tight tracking-tight">Vlogs</h3>
+              <p class="mt-2 text-sm leading-relaxed text-mute">Documenting everyday moments.</p>
+              <ul class="mt-4 flex flex-wrap gap-1.5" aria-label="Formats">
+                <li class="rounded-full bg-blue-sky px-2.5 py-1 text-xs font-semibold text-blue">Day in the life</li>
+                <li class="rounded-full bg-blue-sky px-2.5 py-1 text-xs font-semibold text-blue">Behind the scenes</li>
+                <li class="rounded-full bg-blue-sky px-2.5 py-1 text-xs font-semibold text-blue">Events &amp; outings</li>
+              </ul>
+              <div class="mt-auto flex items-center justify-between gap-3 pt-6">
+                <span class="lane-count text-xs font-semibold text-mute" data-lane="vlogs"></span>
+                <a href="vlogs.html" class="inline-flex items-center gap-2 rounded-full bg-ink px-4 py-2.5 text-xs font-bold text-white transition after:absolute after:inset-0 after:content-[''] group-hover:bg-blue focus:outline-none">
+                  Open lane <span aria-hidden="true">→</span><span class="sr-only">: Vlogs</span>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ WHY COLLAB ============ -->
+    <section id="collab" class="scroll-mt-16 pb-20 sm:pb-28" aria-labelledby="collab-title">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="reveal grid gap-6 lg:grid-cols-12 lg:items-end">
+          <div class="lg:col-span-7">
+            <p class="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-blue">02 · Collab</p>
+            <h2 id="collab-title" class="mt-3 font-display text-5xl font-black leading-[0.95] tracking-tightest sm:text-6xl">Why work with <span class="text-blue">1nijel</span>.</h2>
+          </div>
+          <p class="text-lg text-mute lg:col-span-5">For brands, promoters, event organisers and fellow creators who want reach that feels like word of mouth, not an ad.</p>
+        </div>
+
+        <div class="mt-10 grid gap-4 lg:grid-cols-12">
+          <ul class="grid gap-4 sm:grid-cols-3 lg:col-span-8" role="list">
+            <li class="reveal flex flex-col rounded-[2rem] border border-line bg-white p-7 shadow-card">
+              <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-blue text-white" aria-hidden="true">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v5M8 22h8"/></svg>
+              </span>
+              <h3 class="mt-6 font-display text-xl font-extrabold leading-tight tracking-tight">Real street interviews</h3>
+              <p class="mt-2 text-sm leading-relaxed text-mute">I put the mic in front of real people and ask the questions everyone is thinking. Honest reactions, no script.</p>
+            </li>
+            <li class="reveal flex flex-col rounded-[2rem] border border-line bg-white p-7 shadow-card">
+              <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-gold text-ink" aria-hidden="true">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><circle cx="17" cy="9" r="2.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M15 20a5 5 0 0 1 6.5-4.8"/></svg>
+              </span>
+              <h3 class="mt-6 font-display text-xl font-extrabold leading-tight tracking-tight">Part of the community</h3>
+              <p class="mt-2 text-sm leading-relaxed text-mute">I film in the communities I belong to: matchday crowds, and the diaspora at large.</p>
+            </li>
+            <li class="reveal flex flex-col rounded-[2rem] border border-line bg-white p-7 shadow-card">
+              <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-ink text-white" aria-hidden="true">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>
+              </span>
+              <h3 class="mt-6 font-display text-xl font-extrabold leading-tight tracking-tight">Early and flexible</h3>
+              <p class="mt-2 text-sm leading-relaxed text-mute">I'm building this brand now, so I'll shape the idea with you, not hand you a template.</p>
+            </li>
+          </ul>
+
+          <div class="reveal flex flex-col rounded-[2rem] bg-gold-cream p-7 lg:col-span-4">
+            <h3 class="font-display text-xl font-extrabold tracking-tight">Ways to work together</h3>
+            <ul class="mt-5 divide-y divide-ink/10 text-base font-semibold" role="list">
+              <li class="flex items-center justify-between py-3">Sponsored videos <span class="text-blue" aria-hidden="true">→</span></li>
+              <li class="flex items-center justify-between py-3">Street interviews <span class="text-blue" aria-hidden="true">→</span></li>
+              <li class="flex items-center justify-between py-3">Event &amp; carnival coverage <span class="text-blue" aria-hidden="true">→</span></li>
+              <li class="flex items-center justify-between py-3">Creator collabs <span class="text-blue" aria-hidden="true">→</span></li>
+              <li class="flex items-center justify-between py-3">Vlog features <span class="text-blue" aria-hidden="true">→</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- CTA band -->
+        <div class="reveal relative mt-4 overflow-hidden rounded-[2.5rem] bg-ink p-8 text-white sm:p-12">
+          <div class="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-blue/60 blur-3xl" aria-hidden="true"></div>
+          <div class="pointer-events-none absolute -bottom-24 right-40 h-56 w-56 rounded-full bg-gold/30 blur-3xl" aria-hidden="true"></div>
+          <div class="relative flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
+            <div>
+              <h3 class="font-display text-4xl font-black leading-[0.95] tracking-tightest sm:text-5xl">Got a brief? <span class="text-gold">Let's talk.</span></h3>
+              <p class="mt-3 max-w-lg text-white/70">Send me the idea, the dates and a rough budget. I reply within a few days.</p>
+            </div>
+            <div class="flex flex-col gap-3 sm:flex-row">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=1nijelcollab@gmail.com&su=Collab%20with%201nijel" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 rounded-full bg-gold px-7 py-4 text-sm font-bold text-ink transition hover:-translate-y-0.5 hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-ink">
+                1nijelcollab@gmail.com <span aria-hidden="true">→</span>
+              </a>
+              <a href="https://www.instagram.com/1nijel/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 px-7 py-4 text-sm font-bold text-white transition hover:border-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white">
+                DM on Instagram <span aria-hidden="true">↗</span><span class="sr-only">(opens in a new tab)</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="border-t border-line bg-white" aria-labelledby="footer-title">
+    <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+      <div class="grid gap-10 lg:grid-cols-12">
+        <div class="lg:col-span-5">
+          <h2 id="footer-title" class="font-display text-4xl font-black leading-none tracking-tightest">1nijel, never <span class="text-blue">two.</span></h2>
+          <p class="mt-3 text-mute">Engineer half the day, enjoyment minister the rest.</p>
+          <div class="mt-5 flex h-1.5 w-24 overflow-hidden rounded-full" aria-hidden="true">
+            <span class="flex-1 bg-blue-deep"></span><span class="flex-1 bg-gold"></span><span class="flex-1 bg-blue-deep"></span>
+          </div>
+        </div>
+
+        <ul class="grid gap-3 sm:grid-cols-2 lg:col-span-7" role="list">
+          <li>
+            <a href="https://www.instagram.com/1nijel/" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-between rounded-2xl border border-line p-5 transition hover:border-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-blue">
+              <span><span class="block text-xs font-medium text-mute">Instagram</span><span class="mt-0.5 block font-semibold">@1nijel</span></span>
+              <span class="text-xl text-mute transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-blue" aria-hidden="true">↗</span>
+              <span class="sr-only">(opens in a new tab)</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@1nijel-u5c" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-between rounded-2xl border border-line p-5 transition hover:border-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-blue">
+              <span><span class="flex items-center gap-2 text-xs font-medium text-mute">YouTube <span class="rounded-full bg-gold px-2 py-0.5 text-[10px] font-bold text-ink">New</span></span><span class="mt-0.5 block font-semibold">@1nijel</span></span>
+              <span class="text-xl text-mute transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-blue" aria-hidden="true">↗</span>
+              <span class="sr-only">(opens in a new tab)</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=1nijelcollab@gmail.com&su=Collab%20with%201nijel" target="_blank" rel="noopener" class="group flex items-center justify-between rounded-2xl border border-line p-5 transition hover:border-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-blue">
+              <span><span class="block text-xs font-medium text-mute">Email</span><span class="mt-0.5 block font-semibold">1nijelcollab@gmail.com</span></span>
+              <span class="text-xl text-mute transition group-hover:translate-x-0.5 group-hover:text-blue" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://1nijel.com/" class="group flex items-center justify-between rounded-2xl border border-line p-5 transition hover:border-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-blue">
+              <span><span class="block text-xs font-medium text-mute">Website</span><span class="mt-0.5 block font-semibold">1nijel.com</span></span>
+              <span class="text-xl text-mute transition group-hover:translate-x-0.5 group-hover:text-blue" aria-hidden="true">→</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mt-12 flex flex-col gap-3 border-t border-line pt-6 text-sm text-mute sm:flex-row sm:items-center sm:justify-between">
+        <p>© <span id="year">2026</span> 1nijel. Blue &amp; gold, from the flag of Barbados.</p>
+        <a href="#top" class="w-fit font-semibold hover:text-blue">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/videos.js?v=1793502616"></script>
+  <script src="assets/site.js?v=1793502616"></script>
+  <script src="assets/home.js?v=1793502616"></script>
+</body>
+</html>

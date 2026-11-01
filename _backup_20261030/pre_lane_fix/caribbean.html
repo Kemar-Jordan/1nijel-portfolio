@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" class="motion-safe:scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://i.ytimg.com; frame-src https://www.youtube-nocookie.com https://www.instagram.com; connect-src 'self'; media-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#F7F6F2">
+
+  <title>Caribbean &amp; Diaspora Vibes | 1nijel</title>
+  <meta name="description" content="Cultural events, street trivia and carnival coverage celebrating Caribbean heritage and the diaspora.">
+  <meta name="author" content="1nijel">
+  <link rel="canonical" href="https://1nijel.com/caribbean.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Caribbean &amp; Diaspora Vibes | 1nijel">
+  <meta property="og:description" content="Cultural events, street trivia and carnival coverage celebrating Caribbean heritage and the diaspora.">
+  <meta property="og:url" content="https://1nijel.com/caribbean.html">
+  <meta property="og:image" content="https://1nijel.com/images/hero-host.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Caribbean &amp; Diaspora Vibes | 1nijel">
+  <meta name="twitter:description" content="Cultural events, street trivia and carnival coverage celebrating Caribbean heritage and the diaspora.">
+  <meta name="twitter:image" content="https://1nijel.com/images/hero-host.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;700;800;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/head.js"></script>
+  <style>
+    :root { color-scheme: light; }
+    body { background: #F7F6F2; color: #0F1115; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    ::selection { background: #FFC726; color: #0F1115; }
+    .cat-card[hidden] { display: none; }
+    @media (prefers-reduced-motion: no-preference) {
+      .js .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s cubic-bezier(.2,.7,.2,1); }
+      .js .reveal.is-in { opacity: 1; transform: none; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .animate-marquee { animation: none; }
+    }
+  </style>
+</head>
+
+<body class="bg-paper font-sans text-ink antialiased" data-lane="caribbean">
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-ink focus:px-4 focus:py-2 focus:font-semibold focus:text-white">Skip to content</a>
+
+  <!-- ============ HEADER / NAV ============ -->
+  <header id="site-header" class="fixed inset-x-0 top-0 z-50 border-b border-transparent transition-colors duration-300">
+    <div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <a href="index.html" class="flex items-center gap-3" aria-label="1nijel home">
+        <span class="flex h-9 w-9 items-center justify-center rounded-xl bg-blue font-display text-sm font-black text-white" aria-hidden="true">1N</span>
+        <span class="flex flex-col leading-none">
+          <span class="font-display text-lg font-extrabold tracking-tight">1nijel</span>
+          <span class="mt-0.5 text-[11px] font-medium text-mute">1nijel, never two</span>
+        </span>
+      </a>
+
+      <nav aria-label="Primary" class="hidden md:block">
+        <ul class="flex items-center gap-1 text-sm font-semibold">
+          <li><a href="index.html#about" class="nav-link rounded-full px-4 py-2 text-mute transition hover:bg-white hover:text-ink">About</a></li>
+          <li><a href="index.html#categories" class="nav-link rounded-full px-4 py-2 text-mute transition hover:bg-white hover:text-ink">Categories</a></li>
+          <li><a href="index.html#collab" class="nav-link rounded-full px-4 py-2 text-mute transition hover:bg-white hover:text-ink">Collab</a></li>
+          <li class="pl-3">
+            <a href="mailto:1nijelcollab@gmail.com?subject=Collab%20with%201nijel" class="inline-flex items-center gap-2 rounded-full bg-ink px-5 py-2.5 text-white transition hover:bg-blue focus:outline-none focus-visible:ring-2 focus-visible:ring-blue focus-visible:ring-offset-2">
+              Work with me <span aria-hidden="true">→</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <button id="menu-toggle" type="button" class="relative inline-flex h-11 w-11 items-center justify-center rounded-full border border-line bg-white md:hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-blue" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu">
+        <span aria-hidden="true" class="absolute block h-0.5 w-5 -translate-y-1.5 rounded bg-ink transition-transform duration-300" data-bar="top"></span>
+        <span aria-hidden="true" class="absolute block h-0.5 w-5 rounded bg-ink transition-opacity duration-300" data-bar="mid"></span>
+        <span aria-hidden="true" class="absolute block h-0.5 w-5 translate-y-1.5 rounded bg-ink transition-transform duration-300" data-bar="bot"></span>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden border-t border-line bg-paper md:hidden">
+      <nav aria-label="Mobile">
+        <ul class="flex flex-col gap-1 px-4 py-5 font-display text-3xl font-extrabold tracking-tight">
+          <li><a href="index.html#about" class="mobile-link block rounded-2xl px-3 py-3 hover:bg-white">About</a></li>
+          <li><a href="index.html#categories" class="mobile-link block rounded-2xl px-3 py-3 hover:bg-white">Categories</a></li>
+          <li><a href="index.html#collab" class="mobile-link block rounded-2xl px-3 py-3 hover:bg-white">Collab</a></li>
+          <li class="px-3 pt-3">
+            <a href="mailto:1nijelcollab@gmail.com?subject=Collab%20with%201nijel" class="mobile-link flex w-full items-center justify-center rounded-full bg-blue px-6 py-4 font-sans text-base font-bold text-white">Work with me →</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div id="lane-root"></div>
+    <noscript>
+      <div class="mx-auto max-w-3xl px-4 pt-32 pb-20 text-center">
+        <h1 class="font-display text-5xl font-black tracking-tight">Caribbean &amp; Diaspora Vibes</h1>
+        <p class="mt-4 text-lg text-mute">Turn on JavaScript to browse these clips, or watch them on <a class="font-semibold text-blue underline" href="https://www.instagram.com/1nijel/" target="_blank" rel="noopener noreferrer">Instagram</a>.</p>
+      </div>
+    </noscript>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="border-t border-line bg-white" aria-labelledby="footer-title">
+    <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+      <div class="grid gap-10 lg:grid-cols-12">
+        <div class="lg:col-span-5">
+          <h2 id="footer-title" class="font-display text-4xl font-black leading-none tracking-tightest">1nijel, never <span class="text-blue">two.</span></h2>
+          <p class="mt-3 text-mute">Engineer half the day, enjoyment minister the rest.</p>
+          <div class="mt-5 flex h-1.5 w-24 overflow-hidden rounded-full" aria-hidden="true">
+            <span class="flex-1 bg-blue-deep"></span><span class="flex-1 bg-gold"></span><span class="flex-1 bg-blue-deep"></span>
+          </div>
+        </div>
+
+        <ul class="grid gap-3 sm:grid-cols-2 lg:col-span-7" role="list">
+          <li>
+            <a href="https://www.instagram.com/1nijel/" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-between rounded-2xl border border-line p-5 transition hover:border-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-blue">
+              <span><span class="block text-xs font-medium text-mute">Instagram</span><span class="mt-0.5 block font-semibold">@1nijel</span></span>
+              <span class="text-xl text-mute transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-blue" aria-hidden="true">↗</span>
+              <span class="sr-only">(opens in a new tab)</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@1nijel-u5c" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-between rounded-2xl border border-line p-5 transition hover:border-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-blue">
+              <span><span class="flex items-center gap-2 text-xs font-medium text-mute">YouTube <span class="rounded-full bg-gold px-2 py-0.5 text-[10px] font-bold text-ink">New</span></span><span class="mt-0.5 block font-semibold">@1nijel</span></span>
+              <span class="text-xl text-mute transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-blue" aria-hidden="true">↗</span>
+              <span class="sr-only">(opens in a new tab)</span>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:1nijelcollab@gmail.com?subject=Collab%20with%201nijel" class="group flex items-center justify-between rounded-2xl border border-line p-5 transition hover:border-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-blue">
+              <span><span class="block text-xs font-medium text-mute">Email</span><span class="mt-0.5 block font-semibold">1nijelcollab@gmail.com</span></span>
+              <span class="text-xl text-mute transition group-hover:translate-x-0.5 group-hover:text-blue" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://1nijel.com/" class="group flex items-center justify-between rounded-2xl border border-line p-5 transition hover:border-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-blue">
+              <span><span class="block text-xs font-medium text-mute">Website</span><span class="mt-0.5 block font-semibold">1nijel.com</span></span>
+              <span class="text-xl text-mute transition group-hover:translate-x-0.5 group-hover:text-blue" aria-hidden="true">→</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mt-12 flex flex-col gap-3 border-t border-line pt-6 text-sm text-mute sm:flex-row sm:items-center sm:justify-between">
+        <p>© <span id="year">2026</span> 1nijel. Blue &amp; gold, from the flag of Barbados.</p>
+        <a href="#main" class="w-fit font-semibold hover:text-blue">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/videos.js"></script>
+  <script src="assets/site.js"></script>
+  <script src="assets/lane.js"></script>
+</body>
+</html>
